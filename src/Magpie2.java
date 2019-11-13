@@ -67,4 +67,35 @@ public class Magpie2 {
 
 		return response;
 	}
+	public String candyResponse(String statement1){
+		String response1 ="";
+		if (statement1.indexOf("candy") >=0){
+			response1 = "i like candy";
+		}
+		return response1;
+	}
+	public String partyResponse(String statement1){
+		String response1 ="";
+		if (statement1.indexOf("party") >=0){
+			response1 = "i like to party";
+		}
+		return response1;
+	}	
+		public String gameResponse(String statement1){
+		String response1 ="";
+		if (statement1.indexOf("games") >=0){
+			response1 = "my favorite game is fortnite!";
+		}
+		return response1;
+	}	
+	public String pantsResponse(String statement1){
+		String response1 ="";
+		if (statement1.indexOf("pants") >=0){
+			response1 = "i like to put on pants";
+		}
+		return response1;
+	}	
+	
+
+	
 }
