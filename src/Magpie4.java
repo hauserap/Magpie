@@ -81,6 +81,16 @@ public class Magpie4 {
 		String restOfStatement = statement.substring(psn + 9).trim();
 		return "What would it mean to " + restOfStatement + "?";
 	}
+	private String iwant (String statement3){
+		statement3 = statement3.trim();
+		String lastChar1 = statement3.substring(statement3.length() - 1);
+		if (lastChar1.equals(".")) {
+			statement3 = statement3.substring(0, statement3.length() - 1);
+		}
+		int psn = findKeyword(statement3, "I want ", 0);
+		String restOfStatement3 = statement3.substring(psn + 9).trim();
+		return "Would you be happy if you had " + restOfStatement3 + "?";
+	}
 
 	/**
 	 * Take a statement with "you <something> me" and transform it into
